@@ -4,28 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>bookswhenbooks</title>
-  <!-- Link to Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Playfair Display', serif;
-      background-color: #1e1e1e; /* dark grey */
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #1e1e1e; /* dark grey background */
       color: white;
-    }
-    .logo {
-      margin: 0;
-      padding: 0;
-    }
-    .logo img {
-      max-width: 250px;
-      height: auto;
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
     .container {
       max-width: 600px;
-      padding: 40px 40px 40px 20px; /* small left padding, generous top/bottom */
+      padding: 40px 60px;
     }
     h1 {
       font-size: 3em;
@@ -38,21 +31,28 @@
     .note {
       font-size: 1em;
       line-height: 1.5;
-      max-width: 500px;
+      margin-bottom: 2em;
+    }
+    .youtube-link a {
+      color: #00bfff;
+      text-decoration: none;
+      font-size: 1em;
+    }
+    .youtube-link a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="logo">
-    <img src="logo.png" alt="bookswhenbooks logo">
-  </div>
   <div class="container">
     <h1>bookswhenbooks</h1>
     <div class="email">bookswhenbooks@gmail.com</div>
     <div class="note">
       Got a question, business enquiry or a book recommendation/review request? Send me an email :)
     </div>
+    <div class="youtube-link">
+      <a href="https://www.youtube.com/@bookswhenbooks" target="_blank">Visit the YouTube Channel</a>
+    </div>
   </div>
 </body>
 </html>
-
