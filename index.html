@@ -4,58 +4,104 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>bookswhenbooks.com</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #1e1e1e;
+      font-family: 'Space Grotesk', sans-serif;
       color: white;
+      background: linear-gradient(-45deg, #1e1e1e, #3a3a3a, #1e1e1e, #111);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
     }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
     .content-wrapper {
       flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: left;
     }
+
     .container {
       max-width: 600px;
       padding: 40px 60px;
+      animation: fadeIn 1.5s ease-out both;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     h1 {
-      font-size: 3em;
+      font-size: 3.2em;
+      font-weight: 700;
       margin-bottom: 0.2em;
+      color: #ffffff;
     }
+
     .coming-soon {
-      font-size: 1.2em;
+      font-size: 1.3em;
       margin-bottom: 2em;
-      color: #ccc;
+      color: #dddddd;
     }
+
     .note {
-      font-size: 1em;
-      line-height: 1.5;
-      margin-bottom: 1em;
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 1.5em;
     }
+
     .email {
-      font-size: 1.2em;
+      font-size: 1.1em;
+      font-weight: 600;
       margin-bottom: 2em;
+      color: #87cefa;
     }
+
     .youtube-link a {
-      color: #00bfff;
+      color: white;
+      font-weight: 600;
+      font-size: 1.1em;
       text-decoration: none;
-      font-size: 1em;
+      padding: 0.6em 1.2em;
+      border: 2px solid white;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      display: inline-block;
     }
+
     .youtube-link a:hover {
-      text-decoration: underline;
+      background-color: white;
+      color: #1e1e1e;
+      box-shadow: 0 0 20px rgba(255,255,255,0.5);
     }
+
     .footer {
       text-align: center;
       font-size: 0.9em;
-      color: #888;
+      color: #aaaaaa;
       padding: 20px;
+    }
+
+    @media screen and (max-width: 640px) {
+      .container {
+        padding: 30px 20px;
+      }
+      h1 {
+        font-size: 2.5em;
+      }
     }
   </style>
 </head>
@@ -65,7 +111,7 @@
       <h1>bookswhenbooks.com</h1>
       <div class="coming-soon">Coming soon.</div>
       <div class="note">
-        Got a question, business enquiry or a book recommendation/review request send me an email x
+        Got a question, business enquiry or a book recommendation/review request? Send me an email :)
       </div>
       <div class="email">bookswhenbooks@gmail.com</div>
       <div class="youtube-link">
@@ -78,5 +124,6 @@
   </div>
 </body>
 </html>
+
 
 
