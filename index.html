@@ -7,36 +7,42 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
+      padding: 0 2rem;
       font-family: 'Helvetica Neue', sans-serif;
-      background-color: #111;
-      color: white;
+      background-color: white;
+      color: black;
       display: flex;
-      flex-direction: column;
+      justify-content: flex-start;
       align-items: center;
-      justify-content: center;
       height: 100vh;
-      text-align: center;
+    }
+    .container {
+      max-width: 600px;
     }
     h1 {
       font-size: 3em;
       margin-bottom: 0.2em;
     }
-    p {
+    .email {
       font-size: 1.2em;
-      color: #aaa;
+      margin-bottom: 1em;
     }
-    a {
-      color: #00bfff;
-      text-decoration: none;
-      margin-top: 1em;
-      display: inline-block;
+    .note {
+      font-size: 1em;
+      line-height: 1.5;
+      max-width: 400px;
     }
   </style>
 </head>
 <body>
-  <h1>bookswhenbooks</h1>
-  <p>A YouTube channel for book lovers who like their essays weird and wonderful.</p>
-  <a href="https://youtube.com/@bookswhenbooks" target="_blank">Visit YouTube Channel</a>
+  <div class="container">
+    <h1>bookswhenbooks</h1>
+    <div class="email">bookswhenbooks@gmail.com</div>
+    <div class="note">
+      Got a question, business enquiry or a book recommendation/review request?<br>
+      Send me an email :)
+    </div>
+  </div>
 </body>
 </html>
+
